@@ -5,14 +5,12 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
-
 import br.com.dao.GenericDao;
 import br.com.model.Pessoa;
 import br.com.model.Produto;
@@ -40,6 +38,7 @@ public class Almoxarifado extends JFrame {
 		contentPane.setLayout(null);
 		ProdutoTable produtoTable = new ProdutoTable();
 
+		// CHAMA A TELA DE EMPRESTIMO
 		btnEmprestar = new JButton("Emprestar/Devolver");
 		btnEmprestar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
