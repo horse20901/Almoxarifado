@@ -22,7 +22,7 @@ public class LoginController {
 
 	}
 
-	// RETORNA O TIPO DE PESSOA
+	// RETORNAR O TIPO DE USUARIO DA PESSOA
 	public static String getTipo(JTextField txtEmail) {
 
 		GenericDao genericDao = new GenericDao();
@@ -43,7 +43,7 @@ public class LoginController {
 
 	}
 
-	// CHAMA O FRAME
+	// CHAMA O FRAME DE ACORDO COM O TIPO DE USUARIO
 	public static void callFrame(String tipo, JFrame login, Pessoa pessoa) {
 
 		switch (tipo) {
